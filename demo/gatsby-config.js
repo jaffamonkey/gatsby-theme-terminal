@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    name: `gatsby-theme-terminal`,
-    description: `A zero component Gatsby theme for developers`,
-    keywords: [`gatsby`, `gatsbyjs`, `gatsby-theme`],
+    name: `jaffamonkey`,
+    description: `Quality engineering and process improvements in the project pipelines.`,
+    keywords: [`quality`, `testing`, `automation`],
     siteUrl: `https://gatsbythemeterminal.gatsbyjs.io`,
-    siteImage: `https://gatsbythemeterminal.gatsbyjs.io/images/terminal-open-graph-image.jpg`,
-    profileImage: `https://gatsbythemeterminal.gatsbyjs.io/images/terminal-profile-image.jpg`,
+    siteImage: `https://condescending-jepsen-e639a6.netlify.app/images/logo.png`,
+    profileImage: `https://condescending-jepsen-e639a6.netlify.app/images/logo.png`,
     lang: `en`,
     config: {
       sidebarWidth: 280,
