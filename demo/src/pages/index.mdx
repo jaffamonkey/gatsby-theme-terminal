@@ -9,7 +9,6 @@ import { format } from 'date-fns'
     mb: 6
   }}
 >
-
 <SiteMetaData>
   {(siteMetadata) => {
     const { name, description } = siteMetadata
@@ -21,38 +20,7 @@ import { format } from 'date-fns'
     )
   }}
 </SiteMetaData>
-
-<Grid
-  sx={{ 
-    alignItems: 'center',
-    gridTemplateColumns: 'auto 1fr'
-  }}
->
-<Button
-  sx={{ mb: 2 }}
-  as="a"
-  variant="success"
-  href="https://github.com/PaulieScanlon/gatsby-theme-terminal"
-  target="_blank"
->
-  View theme on GitHub
-</Button>
-
-<Link sx={{ whiteSpace: 'nowrap' }} href="https://github.com/PaulieScanlon/gatsby-theme-terminal" target="_blank">
-  gatsby-theme-terminal
-</Link>
 </Grid>
-
-<Alert variant="success">Alert... My website is faster than yours!</Alert>
-
-</Grid>
-
-<Grid
-  sx={{
-    gap: 0,
-    mb: 6
-  }}
->
 
 ## About
 
