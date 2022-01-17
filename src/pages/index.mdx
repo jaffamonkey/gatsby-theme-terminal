@@ -6,7 +6,7 @@ import { format } from 'date-fns'
 
 <Grid
   sx={{
-    mb: 4
+    mb: 5
   }}
 >
 
@@ -28,16 +28,18 @@ import { format } from 'date-fns'
 <Grid
   sx={{
     gap: 0,
-    mb: 4
+    mb: 5
   }}
 >
 
 ## About
 
-Combining the disciplines of test engineering, test management and quality assurance
+<Message variant='secondary' mb={2}>
+  Combining the disciplines of test engineering, test management and quality assurance
+</Message>
 
-25 years of providing quality assurance and testing services, across range of industries. 
-14 years of functional/non-functional test engineering, in CI/CD pipelines.
+<Text as="p" >25 years of providing quality assurance and testing services, across range of industries.</Text>
+<Text as="p" >14 years of functional/non-functional test engineering, in CI/CD pipelines.</Text>
 
 </Grid>
 
@@ -81,13 +83,7 @@ Combining the disciplines of test engineering, test management and quality assur
 
 </Box>
 
-</Grid>
-
-<Grid
-  sx={{
-    mb: 4
-  }}
->
+<Box>
 <Card
   sx={{
     maxWidth: 800,
@@ -95,4 +91,5 @@ Combining the disciplines of test engineering, test management and quality assur
 >
   <Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/clients.png" />
 </Card>
+</Box>
 </Grid>
