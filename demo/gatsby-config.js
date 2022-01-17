@@ -3,7 +3,7 @@ module.exports = {
     name: `jaffamonkey`,
     description: `Quality engineering and process improvements in the project pipelines.`,
     keywords: [`quality`, `testing`, `automation`],
-    siteUrl: `https://gatsbythemeterminal.gatsbyjs.io`,
+    siteUrl: `https://condescending-jepsen-e639a6.netlify.app`,
     siteImage: `https://condescending-jepsen-e639a6.netlify.app/images/logo.png`,
     profileImage: `https://condescending-jepsen-e639a6.netlify.app/images/logo.png`,
     lang: `en`,

@@ -9,6 +9,7 @@ import { format } from 'date-fns'
     mb: 6
   }}
 >
+
 <SiteMetaData>
   {(siteMetadata) => {
     const { name, description } = siteMetadata
@@ -20,40 +21,43 @@ import { format } from 'date-fns'
     )
   }}
 </SiteMetaData>
+
+<Grid
+  sx={{ 
+    alignItems: 'center',
+    gridTemplateColumns: 'auto 1fr'
+  }}
+>
+<Button
+  sx={{ mb: 2 }}
+  as="a"
+  variant="success"
+  href="https://github.com/PaulieScanlon/gatsby-theme-terminal"
+  target="_blank"
+>
+  View theme on GitHub
+</Button>
+
+<Link sx={{ whiteSpace: 'nowrap' }} href="https://github.com/PaulieScanlon/gatsby-theme-terminal" target="_blank">
+  gatsby-theme-terminal
+</Link>
 </Grid>
+
+<Alert variant="success">Alert... My website is faster than yours!</Alert>
+
+</Grid>
+
+<Grid
+  sx={{
+    gap: 0,
+    mb: 6
+  }}
+>
 
 ## About
 
-<Alert variant="success">Detail-oriented, reliable, and forward-thinking, with over 20 years experience in the field of Quality on many Agile projects. I combine the disciplines of test engineering, devOps, exploratory testing, test management and quality assurance to provide a more rounded contribution.</Alert>
+Write anything you want in `src/pages/index.mdx` and it'll go here.
 
-<Grid sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'] }}>  
-<Box>
-<Heading variant="styles.h3" sx={{ mb: 0 }}>
-  Key skills
-</Heading>
-* Quality assurance
-* Test engineering
-* Performance testing frameworks
-* Accessibility and security audits
-* Mentoring
-* Leading teams in adopting quality as part of way of working.
-* Leading quality meetings with business and test teams.
-* Coordinating test efforts across multiple projects.
-* Mentoring less experienced testers in test engineering.
-  </Box>
-<Box>
-  <Heading variant="styles.h3" sx={{ mb: 0 }}>
-  Highlights
-</Heading>
-* Experience in test engineering in multiple languages (JavaScript, Dart, Python, PHP, Ruby, Java, C#)
-* Ensuring testing process in line with Development and DevOps.
-* Involving the business more directly with quality process.
-* Proactively promoting quality as means to measure success.
-* Improving quality in CI.
-* Introducing non-functional testing as standard practice.
-* Implementing code-level Web and Mobile app accessibility automated checks in SDLC.
-* Agile, Scrum, BDD, and Kanban project experience.
-</Box>
 </Grid>
 
 <Grid sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'] }}>  
