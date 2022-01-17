@@ -1,22 +1,37 @@
 {
+  "name": "demo",
   "private": true,
-  "scripts": {
-    "clean": "yarn workspace demo clean",
-    "serve": "yarn workspace demo serve",
-    "develop": "yarn workspace demo develop",
-    "build": "yarn workspace demo build",
-    "prettier": "prettier --config ./.prettierrc.js --ignore-path ./.prettierignore --write \"**/*.{json,js,ts,tsx,mdx}\"",
-    "release": "node copy-readme.js && yarn workspace @pauliescanlon/gatsby-theme-terminal publish"
+  "description": "A simple starter using gatsby-theme-terminal",
+  "version": "0.1.0",
+  "author": "Paul Scanlon <pauliescanlon@gmail.com>",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@pauliescanlon/gatsby-theme-terminal": "*",
+    "date-fns": "^2.23.0",
+    "gatsby": "^4.0.0",
+    "gatsby-plugin-google-analytics": "^4.0.0",
+    "gatsby-plugin-mdx": "^3.0.0",
+    "gatsby-source-filesystem": "^4.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
-  "postinstall": "husky install",
-  "workspaces": [
-    "@pauliescanlon/gatsby-theme-terminal",
-    "demo"
+  "keywords": [
+    "gatsby"
   ],
-  "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
-    "husky": "^7.0.1",
-    "prettier": "^2.3.2"
-  }
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "browserslist": [
+    ">0.25%",
+    "not dead",
+    "IE 11"
+  ]
 }
