@@ -4,8 +4,8 @@ module.exports = {
     description: `Quality engineering and process improvements in the project pipelines.`,
     keywords: [`quality`, `testing`, `automation`],
     siteUrl: `https://condescending-jepsen-e639a6.netlify.app`,
-    siteImage: `https://condescending-jepsen-e639a6.netlify.app/images/logo.png`,
-    profileImage: `https://condescending-jepsen-e639a6.netlify.app/images/logo.png`,
+    siteImage: `https://github.com/jaffamonkey/gatsby-theme-terminal/blob/main/static/images/logo.png`,
+    profileImage: `https://github.com/jaffamonkey/gatsby-theme-terminal/blob/main/static/images/logo.png`,
     lang: `en`,
     config: {
       sidebarWidth: 280,
