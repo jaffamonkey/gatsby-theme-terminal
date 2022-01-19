@@ -1,8 +1,30 @@
 ---
 navigationLabel: Quality Engineering
 ---
+<Grid
+  sx={{
+    mb: 4
+  }}
+>
 
-# Quality Engineering
+<SiteMetaData>
+  {(siteMetadata) => {
+    const { name, description } = siteMetadata
+    return (
+      <Fragment>
+        <Heading variant="styles.h1">{navigationLabel}</Heading>
+      </Fragment>
+    )
+  }}
+</SiteMetaData>
+<Box>
+</Grid>
+<Grid
+  sx={{
+    gap: 0,
+    mb: 4
+  }}
+>
 
 <Message variant='secondary' mb={4}>Implement quality checks earlier in development cycle, including design and requirements stages</Message>
 
@@ -40,5 +62,6 @@ Team building games are not as inclusive an exercise as you might imagine.</Mess
 Yes, there is a human side to quality engineering - the team, and key to success is transparency across the board. 
 
 Business will end up with confidence they have the whole picture, and the team will work more effectively, not having to worry about "playing the game". 
-
+</Box>
+</Grid>
 

@@ -1,0 +1,58 @@
+---
+navigationLabel: Contact
+---
+
+<Grid
+  sx={{
+    mb: 4
+  }}
+>
+
+<SiteMetaData>
+  {(siteMetadata) => {
+    const { name, description } = siteMetadata
+    return (
+      <Fragment>
+        <Heading variant="styles.h1">{navigationLabel}</Heading>
+      </Fragment>
+    )
+  }}
+</SiteMetaData>
+</Grid>
+
+
+<Box>
+</Grid>
+<Grid
+  sx={{
+    mb: 4
+  }}
+>
+<Box>
+<Message variant='secondary' mb={4}>
+  Quality engineering and process improvements in the project pipeline, by combining the disciplines of test engineering, test management and quality assurance
+</Message>
+<Heading variant="styles.h3" sx={{ mb: 0 }}>
+  Twitter
+</Heading>
+<Link href="https://twitter.com/PaulieScanlon/" variant="styles.a">
+  https://twitter.com/jaffamonkey/
+</Link>
+
+<Heading variant="styles.h3" sx={{ mb: 0 }}>
+  GitHub
+</Heading>
+<Link href="https://github.com/PaulieScanlon/" variant="styles.a">
+  https://github.com/jaffamonkey/
+</Link>
+
+<Heading variant="styles.h3" sx={{ mb: 0 }}>
+  LinkedIn
+</Heading>
+<Link href="https://www.linkedin.com/in/jaffamonkey/" variant="styles.a">
+  https://linkedin.com/in/jaffamonkey/
+</Link>
+
+</Box>
+
+</Grid>
