@@ -19,7 +19,10 @@ navigationLabel: Accessibility
 </SiteMetaData>
 </Grid>
 
-<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gap: 5, mb: 4 }}>  
+<Grid  sx={{mb: 4 }}>  
+<Message variant='secondary' mb={4}>
+Accessibility involves a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities. 
+</Message>
 <Box>
 
 ## Accessibility audit
@@ -29,15 +32,7 @@ Mitigate Accessibility errors, by investing time checking at design phase.
 In your CI pipeline, you can add lean tools to verify code super-fast!
 
 Tools will go part-way at least, but full verification will entail manual checking.
-</Box>
 
-<Box>
-
-## WCAG
-
-<Message variant='secondary' mb={4}>
-Accessibility involves a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities. 
-</Message>
 <Link href='https://www.w3.org/TR/WCAG21/'>Web Accessibility Standard (2.1)</Link>
 <Link href='https://www.w3.org/WAI/standards-guidelines/mobile/'>Mobile Accessibility Standard (2.0)</Link>
 </Box>
