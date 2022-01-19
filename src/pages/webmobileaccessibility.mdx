@@ -3,7 +3,11 @@ navigationLabel: Accessibility
 ---
 
 
-<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gap: 5, mb: 6 }}>  
+<Grid
+  sx={{
+    mb: 4
+  }}
+>
 <SiteMetaData>
   {(siteMetadata) => {
     return (
@@ -13,6 +17,9 @@ navigationLabel: Accessibility
     )
   }}
 </SiteMetaData>
+</Grid>
+
+<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gap: 5, mb: 6 }}>  
 <Box>
 
 ## Accessibility audits
