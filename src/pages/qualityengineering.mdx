@@ -24,6 +24,7 @@ navigationLabel: Quality Engineering
     mb: 4
   }}
 >
+<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gap: 5, mb: 4 }}>  
 <Box>
 
 <Message variant='secondary' mb={4}>Test strategies cross over into requirements, design, devops and development - and they should!</Message>
@@ -34,7 +35,8 @@ It's not fixed in stone, a <Link href="https://condescending-jepsen-e639a6.netli
 
 Done well, i.e. with brevity, clarity and relevance, the strategy will become a go-to for everyone on projects or connected to it.
 
-
+</Box>
+<Box>
 <Message variant='secondary' mb={4}>Implement quality checks earlier in development cycle, including design and requirements stages</Message>
 
 ## Shift left to UXD
@@ -42,6 +44,10 @@ Done well, i.e. with brevity, clarity and relevance, the strategy will become a 
 UX team can (and probably) design against accessibility standards and design principles, so don't omit inviting them to Sprint planning or simply to chat about a feature. 
 
 UX teams are woefully underused, yet so wel-versed in user stories, they seem natural choice to drive planning sessions.
+</Box>
+</Grid>
+<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gap: 5, mb: 4 }}>  
+<Box>
 
 <Message variant='success' mb={4}>Tests belong in the CI/CD pipelines</Message>
 
@@ -50,6 +56,8 @@ UX teams are woefully underused, yet so wel-versed in user stories, they seem na
 Sometimes investing is a feature-rich test framework is a good idea, but starting small is always the best place to start - tests run as part of CI/CD should be as lean (fast) as possible.
 
 onversely, don’t waste too much time on native coding - packages are there too help you, just be selective and conscious of potential overheads created on the build pipeline server.
+</Box>
+<Box>
 
 <Message variant='primary' mb={4}>
   Focus on a transparent and supportive work culture will pay dividends
@@ -62,6 +70,11 @@ Ask any developer and they will tell you how useful performance tests are.
 You can  waste a lot of time focusing on trapping functional errors, but these hold little value in compisron to testing for performance issues.
 
 You don’t need to run a heavy load test to get useful feedback. Security testing is an essential not an option, and investing in code analysis tool will help maintain  performance.
+</Box>
+</Grid>
+
+<Grid  sx={{ mb: 4 }}>  
+<Box>
 
 <Message variant='muted' mb={4}>
 Team building games are not as inclusive an exercise as you might imagine.</Message>
