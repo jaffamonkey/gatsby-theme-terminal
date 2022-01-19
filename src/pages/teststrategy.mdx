@@ -2,14 +2,27 @@
 navigationLabel: Automation Strategy
 ---
 
-# Automation Strategy
-
-<Message variant='secondary' mb={4}>
-Shift-left -> Automate-first -> Continuous Quality
-</Message>
+<Grid
+  sx={{
+    mb: 4
+  }}
+>
+<SiteMetaData>
+  {(siteMetadata) => {
+    return (
+      <Fragment>
+        <Heading variant="styles.h1">{navigationLabel}</Heading>
+      </Fragment>
+    )
+  }}
+</SiteMetaData>
+</Grid>
 
 <Grid  sx={{ mb: 4 }}>  
 <Box>
+<Message variant='secondary' mb={4}>
+Shift-left -> Automate-first -> Continuous Quality
+</Message>
 
 ## CI pipeline
 
