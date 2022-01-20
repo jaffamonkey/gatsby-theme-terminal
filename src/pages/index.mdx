@@ -38,12 +38,18 @@ import { format } from 'date-fns'
     mb: 4
   }}
 >
-
+<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gap: 5, mb: 6 }}>  
+<Box>
 ## About
 
 <Text as="p" >25 years of providing quality assurance and testing services, across range of industries.</Text>
 <Text as="p" >14 years of functional/non-functional test engineering, in CI/CD pipelines.</Text>
+</Box>
+<Box>
 
+<Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/clients.png" />
+
+  </Box>
 </Grid>
 
 <Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gap: 5, mb: 6 }}>  
