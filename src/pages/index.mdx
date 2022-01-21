@@ -15,7 +15,7 @@ import { format } from 'date-fns'
     const { name, description } = siteMetadata
     return (
       <Fragment>
-        <Heading as='h1' variant="styles.h1">{name} <Avatar src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/logo2.png" /></Heading>
+        <Heading as='h1' variant="styles.h1">{name}</Heading>
       </Fragment>
     )
   }}
@@ -83,13 +83,7 @@ import { format } from 'date-fns'
   Send an SMS
 </Link>
 
-<Heading variant="styles.h3" sx={{ mb: 0 }}>
-  Skype
-</Heading>
-<Link href="https://join.skype.com/invite/f0C1op8O5Vc3" variant="styles.a">
-  Message me on Skype
-</Link>
-
+<Avatar src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/logo2.png" />
 
 </Box>
 
