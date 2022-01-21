@@ -176,16 +176,11 @@ while [ $count1 -lt "$numberdevicesessions" ]; do
   response7=$(curl -u "$BB_APIKEY": $bitbar_Path/projects/"$project_Id"/runs/"$runid"/device-sessions/"$devicesessionid"/output-file-set/files)
   response7=("${response7[*]}")> /dev/null # convert to array
   body=${response7[*]} # get all elements
-  filetodownload1=$(echo "$body" | jq '.data[0].id')
-  filetodownload2=$(echo "$body" | jq '.data[1].id')
-  filetodownload3=$(echo "$body" | jq '.data[2].id')
-  filetodownload4=$(echo "$body" | jq '.data[3].id')
-  filetodownload5=$(echo "$body" | jq '.data[4].id')
-  curl -L -u "$BB_APIKEY": $filedownload_Path/"$filetodownload1"/file --output console-"$testrun_Name"-"$count1".log
-  curl -L -u "$BB_APIKEY": $filedownload_Path/"$filetodownload2"/file --output performance-"$testrun_Name"-"$count1".json
-  curl -L -u "$BB_APIKEY": $filedownload_Path/"$filetodownload3"/file --output output-files-"$testrun_Name"-"$count1".zip
-  curl -L -u "$BB_APIKEY": $filedownload_Path/"$filetodownload4"/file --output video-"$testrun_Name"-"$count1".mp4
-  curl -L -u "$BB_APIKEY": $filedownload_Path/"$filetodownload5"/file --output device-"$testrun_Name"-"$count1".log
+  curl -L -u "$BB_APIKEY": $filedownload_Path/$(echo "$body" | jq '.data[0].id')/file --output console-"$testrun_Name"-"$count1".log
+  curl -L -u "$BB_APIKEY": $filedownload_Path/$(echo "$body" | jq '.data[1].id')/file --output performance-"$testrun_Name"-"$count1".json
+  curl -L -u "$BB_APIKEY": $filedownload_Path/$(echo "$body" | jq '.data[2].id')/file --output output-files-"$testrun_Name"-"$count1".zip
+  curl -L -u "$BB_APIKEY": $filedownload_Path/$(echo "$body" | jq '.data[3].id')/file --output video-"$testrun_Name"-"$count1".mp4
+  curl -L -u "$BB_APIKEY": $filedownload_Path/$(echo "$body" | jq '.data[4].id')/file --output device-"$testrun_Name"-"$count1".log
   count1=$(( count1 + 1 ))
 done
 
