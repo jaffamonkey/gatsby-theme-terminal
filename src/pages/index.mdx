@@ -53,11 +53,14 @@ import { format } from 'date-fns'
   </Box>
 </Grid>
 
-<Grid columns={[4, '1fr 3fr']}>
-
-  <Box>
+<Grid
+  sx={{
+    mb: 4
+  }}
+>
+  <Box>&copy; jaffamonkey Ltd. | e: paullittlebury@gmail.com | m: +44 7394 074047
+    <Divider />
     <Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/logo2.png" />
-    </Box>
-  <Box>&copy; jaffamonkey Ltd. | e: paullittlebury@gmail.com | m: +44 7394 074047</Box>
+  </Box>
 
 </Grid>
