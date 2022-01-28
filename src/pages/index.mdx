@@ -55,14 +55,14 @@ import { format } from 'date-fns'
 
 <Grid
   sx={{
-    mb: 6
+    
   }}
 >
-<Box p={4}>
-<Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/logo2.png" />
-&copy; jaffamonkey Ltd.
-<Divider />
-<Button variant='success'>BETTER CALL PAUL</Button>
 
-</Box>
+<Grid gap={2} mb={6} columns={[5, '1fr 1fr 1fr 1fr 1fr']}>
+  <Box><Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/logo2.png" /></Box>
+  <Box bg="primary">&copy; jaffamonkey Ltd.</Box>
+  <Box bg="muted">email: paullittlebury@gmail.com</Box>
+  <Box bg="primary">mobile: +44 7394 074047</Box>
+  <Box bg="muted">skype id: jaffamonkey</Box>
 </Grid>
