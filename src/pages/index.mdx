@@ -53,13 +53,11 @@ import { format } from 'date-fns'
   </Box>
 </Grid>
 
-<Grid
-  sx={{
-    mb: 4
-  }}
->
-  <Box><Message variant='muted'>&copy; jaffamonkey Ltd. | e: paullittlebury@gmail.com | m: +44 7394 074047</Message>
+<Grid  sx={{ gridTemplateColumns: ['1fr', '3fr', '1fr 3fr'], gap: 5, mb: 4 }}> 
+
+  <Box>
     <Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/logo2.png" />
   </Box>
-
+  <Box><Message variant='muted'>e: paullittlebury@gmail.com | m: +44 7394 074047 | &copy; jaffamonkey Ltd.</Message>
+  </Box>
 </Grid>
