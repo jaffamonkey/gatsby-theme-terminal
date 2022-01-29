@@ -22,18 +22,9 @@ import { format } from 'date-fns'
 </SiteMetaData>
 </Grid>
 
-<Grid
-  sx={{
-    mb: 4
-  }}
->
-  <Box>
-  <Message variant='secondary'>Quality Engineering for mobile and web app projects - from requirements to production</Message>
-  </Box>
-</Grid>
-
-<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gap: 4, mb: 4 }}>  
-<Box>
+<Flex> 
+<Box gap={4} mb={2} sx={{ flex: '1 1 auto' }}>
+<Message mb={1} variant='secondary'>Quality Engineering for mobile and web app projects - from requirements to production</Message>
 
 ## How I can help
 
@@ -51,7 +42,7 @@ import { format } from 'date-fns'
 <Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/clients.png" />
 
   </Box>
-</Grid>
+</Flex>
 
 <Flex>
   <Box p={3}>
