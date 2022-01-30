@@ -45,15 +45,13 @@ import { format } from 'date-fns'
   </Box>
 </Grid>
 
-<Flex>
+<Grid
+  sx={{
+    mb: 6
+  }}
+>
   <Box p={3}>
-      <Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/logo2.png" />
-      <br />
-    &copy; jaffamonkey Ltd.
+    <Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/logo2.png" />
+    &copy; jaffamonkey Ltd. | email: paullittlebury@gmail.com | mobile: +44 7394 074047
   </Box>
-  <Box p={3} gap={5} sx={{ flex: '1 1 auto' }}>
-    email: paullittlebury@gmail.com<br />
-    mobile: +44 7394 074047
-  </Box>
-
-</Flex>
+</Grid>
