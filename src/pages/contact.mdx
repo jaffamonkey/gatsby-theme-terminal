@@ -1,0 +1,42 @@
+---
+navigationLabel: Contact
+---
+<Grid
+  sx={{
+    mb: 4
+  }}
+>
+
+<SiteMetaData>
+  {(siteMetadata) => {
+    const { name, description } = siteMetadata
+    return (
+      <Fragment>
+        <Heading variant="styles.h1">Contact</Heading>
+      </Fragment>
+    )
+  }}
+</SiteMetaData>
+</Grid>
+
+<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], mb: 4 }}>  
+<Box as="form">
+  <Label htmlFor="input">Input</Label>
+  <Input name="username" mb={3} />
+
+  <Label htmlFor="select">Select</Label>
+  <Select name="select" mb={3}>
+    <option>Quality Engineering</option>
+    <option>Accessibility Audit</option>
+    <option>General</option>
+  </Select>
+
+  <Label htmlFor="textarea">Message</Label>
+  <Textarea name="textarea" rows="6" mb={3} />
+
+
+  <Button variant='secondary'>secondary</Button>
+</Box>
+<Box>
+</Box>
+</Grid>
