@@ -32,8 +32,11 @@ import { format } from 'date-fns'
 
 </Grid>
 
-<Flex>  
-<Box p={2} sx={{ flex: '1 1 auto' }}>
+<Grid
+  sx={{
+    mb: 4
+  }}
+><Box>
 
 <Message variant='secondary'>
 <li>Within a hour, a test framework proof of concept.</li>
@@ -43,10 +46,7 @@ import { format } from 'date-fns'
 <li>Within 3 months, turn around quality processes.</li>
 </Message>
 </Box>
-<Box>
-<Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/strategy.png" />
-</Box>
-</Flex>
+</Grid>
 
 <Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], mb: 4 }}>  
 <Box>
