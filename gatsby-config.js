@@ -33,8 +33,5 @@ module.exports = {
         trackingId: 'UA-76055934-8',
       },
     },
-    {
-      resolve: 'react-calendly',
-    },
   ],
 }
