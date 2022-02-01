@@ -24,7 +24,10 @@ import { format } from 'date-fns'
 
 #### Quality Engineering for mobile and web app projects - from requirements to production
 
-<Message mb={2} variant='secondary'>
+<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gap: 4 mb: 4 }}>  
+<Box>
+
+<Message variant='secondary'>
 <li>Within a hour, I can do a test framework proof of concept.</li>
 <li>Within a day, I can have a test framework demo running.</li>
 <li>Within a week, I can have test framework running on CI.</li>
@@ -32,7 +35,12 @@ import { format } from 'date-fns'
 <li>Within 3 months, I can completely turn around quality processes.</li>
 <li>Within 6 months ... well, hopefully you would never need me that long.</li>
 </Message>
-<Divider />
+
+<Box>
+<Image src="https://raw.githubusercontent.com/jaffamonkey/gatsby-theme-terminal/main/static/images/clients.png" />
+</Box>
+</Grid>
+
 <Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], mb: 4 }}>  
 <Box>
 
@@ -61,6 +69,6 @@ import { format } from 'date-fns'
   }}
 >
   <Box p={1}>
-    &copy; jaffamonkey Ltd. | email: paullittlebury@gmail.com | mobile: +44 7394 074047
+    &copy; jaffamonkey Ltd.
   </Box>
 </Grid>
