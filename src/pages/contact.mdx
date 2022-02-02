@@ -19,25 +19,11 @@ navigationLabel: Contact
 </SiteMetaData>
 </Grid>
 
-<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], mb: 4 }}>  
-<Box as="form">
-  <Label htmlFor="input">Email</Label>
-  <Input name="username" mb={3} />
-
-  <Label htmlFor="select">Select</Label>
-  <Select name="select" mb={3}>
-    <option>Quality Engineering</option>
-    <option>Accessibility Audit</option>
-    <option>General</option>
-  </Select>
-
-  <Label htmlFor="textarea">Message</Label>
-  <Textarea name="textarea" rows="6" mb={3} />
-
-
-  <Button variant='secondary'>Send message</Button>
-</Box>
-<Box>
+<Grid
+  sx={{
+    mb: 4
+  }}
+>
 
 ## Ways to contact me
 
@@ -45,7 +31,6 @@ navigationLabel: Contact
 #### Mobile: +44 7394 074047
 #### Skype: jaffamonkey
 
-</Box>
 </Grid>
 
 
