@@ -1,0 +1,55 @@
+---
+navigationLabel: About
+---
+<Grid
+  sx={{
+    mb: 4
+  }}
+>
+
+<SiteMetaData>
+  {(siteMetadata) => {
+    const { name, description } = siteMetadata
+    return (
+      <Fragment>
+        <Heading variant="styles.h1">Contact</Heading>
+      </Fragment>
+    )
+  }}
+</SiteMetaData>
+</Grid>
+
+<Grid  sx={{ gridTemplateColumns: ['1fr', '1fr', '1fr 1fr'], gap: 5, mb: 4 }}> 
+<Box>
+
+## About me
+
+I started freelancing in 1997, quickly following a test and qa management route for a decade.  But I was always hands-on, always leaning towards the technical challenges. 
+
+12 years ago, I switched to a more focused technical directions of test frameworks and devops.  With my management skills and experience in dricing process changes, I was able to provide a rounded contribution to project quality - not just test engineering. 
+
+My management style is to lead by example, and never micro-manage. I fimmly believe in transparency, regardless of audience - I consider this one of the most important aspects of my work.
+
+</Box>
+<Box>
+
+## Ways to contact me
+
+Email: paullittlebury@gmail.com<br />
+Mobile: +44 7394 074047<br />
+Skype: jaffamonkey<br />
+<Link href="https://calendly.com/jaffamonkeyltd/intro-call">Schedule a meeting</Link>
+</Box>
+
+</Grid>
+
+
+<Grid
+  sx={{
+    mb: 6
+  }}
+>
+  <Box p={1}>
+    &copy; jaffamonkey Ltd.
+  </Box>
+</Grid>
